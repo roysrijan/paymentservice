@@ -1,0 +1,27 @@
+{
+  "name": "paymentservice",
+  "version": "1.0.0",
+  "description": "payment service using payment gateway",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roysrijan/paymentservice.git"
+  },
+  "author": "srijan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roysrijan/paymentservice/issues"
+  },
+  "homepage": "https://github.com/roysrijan/paymentservice#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http-status": "^1.5.0",
+    "mongoose": "^5.12.13"
+  }
+}
