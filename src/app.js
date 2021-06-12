@@ -8,6 +8,20 @@ app.use(cors());
 app.options("*", cors());
 
 
+
+app.use(express.static(__dirname+"/public/dist/ngx-flightbooking"));
+
+app.get('/payment', cors(), function(req,res){
+    res.sendFile(__dirname+"/public/dist/ngx-flightbooking/index.html");
+});
+
+app.post('/billpay',(req, res, next)=>{
+    console.log('inside'+res.body);
+    res.header('Access-Control-Allow-Origin', '*');  
+    next();
+})
+
+
 bodyParser = require('body-parser').json();
 
 app.use(bodyParser);
